@@ -1,0 +1,52 @@
+section{
+    margin-top: 100px;
+}
+div{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #42b532;
+    border: 2px solid black;
+    margin: 10px auto;
+
+}
+
+div:nth-of-type(2n){
+    background-color: #f6d13c;
+}
+
+div:nth-of-type(3n){
+    background-color: #e7a006;
+}
+
+/* /Transform */
+
+
+#one{
+    transform: rotate(45deg);
+}
+#two{
+    transform: rotate(-45deg);
+}
+
+#three{
+    transform: scale(0.5);
+}
+#four{
+    /* transform: scale(1,0.5); */
+    transform: scalex(0.4);
+}
+
+#five{
+    transform: translateX(-100px);
+}
+
+#six{
+    transform: skew(30deg);
+}
+
+#seven{
+    transform: rotate(30deg) translatex(150px) skew(30deg);
+}
+
+

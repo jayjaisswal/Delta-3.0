@@ -1,0 +1,55 @@
+div{
+    /* Height and Width Property */
+
+    /* height: 500px; 
+    width: 300px; */
+    background-color: rgb(70, 70, 226);
+
+    /* Border */
+
+    /* border-width: 10px;
+    border-style: dashed;
+    border-color: brown; */
+    border: 5px solid black;
+    /* border-left-color: blue;
+    border-left-style: dashed;
+    border-top: 5px dashed gray; */
+
+    /* Border radius */
+    /* for complete circle */
+
+    /*    
+    height: 500px; 
+    width: 500px;
+    border-radius: 50%; */
+
+    /* border-radius: 10px 100px/120px; */
+    border-top-right-radius: 50px;
+
+    /* padding */
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    /* margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px; */
+    margin:10px 20px 30px 40px ; /* clockwise top righ bottom left */
+
+
+}
+
+h1{
+    border-width: 2px;
+    border-style: dotted;
+    border-color: blue;
+}
+
+button{
+    border: 2px solid black;
+    border-radius: 10px;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    padding: 10px 25px 30px 40px;
+    background-color: yellow;
+}

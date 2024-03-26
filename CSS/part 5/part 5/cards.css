@@ -1,0 +1,55 @@
+
+
+p{
+    font-weight: bold;
+}
+
+
+button:hover
+{
+background-color:rgb(53, 211, 29);
+color: black;
+transition-duration:.3s;
+}
+
+
+.card{
+   
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px black;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    
+}
+.card:hover {
+    box-shadow: 0px 8px 16px black;
+    transform: rotate(1deg);
+    
+    
+}
+button{
+    margin-bottom: 14px;
+    /* margin-left: 50px; */
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(27, 88, 203);
+    color: white;
+}
+.inner 
+{
+  
+    text-align: center;
+    font-style:inherit;
+
+}

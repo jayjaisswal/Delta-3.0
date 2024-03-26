@@ -1,0 +1,21 @@
+div{
+    background-color: yellow;
+}
+
+/* form{
+    background-color: red;
+} */
+
+/* some tags do not inherit  properties directly from their parents */
+
+input{
+    background-color: inherit;
+}
+
+button{
+    background-color: inherit;
+}
+
+button:hover{
+    background-color: red;
+}

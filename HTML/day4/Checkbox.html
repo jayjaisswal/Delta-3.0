@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level 3  </title>
+</head>
+
+<body>
+    <form action="/server">
+        <input type="checkbox" id="age" name="age">
+        <label for="age">I m 18+</label>
+        <button>submit</button>
+    </form>
+
+
+    <!--Radio input Element-->
+    <form action="/server">
+        <div><input type="radio" name="fruit" id="apple" value="apple">
+            <label for="apple">apple</label>
+            <input type="radio" name="fruit" id="Mango" value="Mango">
+            <label for="Mango">apple</label>
+            <input type="radio" name="fruit" id="Banana" value="Banana">
+            <label for="Banana">apple</label>
+        </div>
+       
+
+        <br>
+        <div>
+            Choose your subject
+            <input type="checkbox" id="maths" name="sub" value="math">
+            <label for="math">math</label>
+            <input type="checkbox" id="sci" name="sub" value="sci">
+            <label for="sci">sci</label>
+            <input type="checkbox" id="AI" name="sub" value="AI">
+            <label for="AI">AI</label>
+        </div>
+        
+
+        <!--Select Element--dropdown-->
+        <div>
+            choose your profession
+            <select name="profession" id="profession">
+                <option>select your option</option>
+                <option value="student">student</option>
+                <option value="dev">developer</option>
+        </div>
+    </select>
+
+    <!--range-->
+    <label for="vol">select your volume level :</label>
+    <input type="range" id="vol" min="0" max="100" name="vol" step="10">
+       
+
+        <!--text area-->
+        <br>
+        <label for="feedback">please give your valuable feedback :</label>
+        <textarea id="feedback" name="feedback" rows="" placeholder="write feedback"></textarea>
+        <button>submit</button> 
+
+
+       
+
+
+    </form>
+
+</body>
+
+</html>
