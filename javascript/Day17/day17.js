@@ -37,3 +37,5 @@ for (i of students)
 {
     console.log(i);
 }
+
+// practice question
