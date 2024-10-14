@@ -1,0 +1,21 @@
+.task{
+  text-align: left;
+  
+}
+.heading{
+  font-weight: 700;
+  font-size: 45px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+input{
+  width: 100%;
+}
+.row{
+  margin: 5px;
+}
+
+.btn{
+  min-width: 80px;
+}
