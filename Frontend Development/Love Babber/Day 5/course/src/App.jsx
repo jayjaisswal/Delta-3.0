@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import { toast } from "react-toastify";
 import "./index.css";
 function App() {
-  const [allCourse, setInfo] = useState(null);
+  const [allCourse, setInfo] = useState([]);
   const [loading, setLoading] = useState(true);
 
   async function fetchData() {
@@ -32,7 +32,7 @@ function App() {
   
   return (
     <>
-      <div>
+      <div className="">
         <Navbar></Navbar>
       </div>
       <div>

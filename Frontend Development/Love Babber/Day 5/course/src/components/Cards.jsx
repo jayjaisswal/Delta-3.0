@@ -1,4 +1,5 @@
 import Card from "./Card";
+import './card.css';
 function Cards({ allCourse }) {
   // console.log(allCourse);
 
@@ -19,7 +20,7 @@ function Cards({ allCourse }) {
     });
   });
   return (
-    <>
+    <div className="cardss">
       {
         courses.map((EachCourse) => (
           <Card key={EachCourse.id} EachCourse={EachCourse}></Card>
@@ -30,7 +31,7 @@ function Cards({ allCourse }) {
         //     return <Card key={EachCourse.id} EachCourse={EachCourse}></Card>
         // })
       }
-    </>
+    </div>
   );
 
 

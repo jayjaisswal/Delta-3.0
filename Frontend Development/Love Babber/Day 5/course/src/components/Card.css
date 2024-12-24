@@ -1,0 +1,56 @@
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  
+  }
+  body{
+    width: 100vw;
+    height: 100vh;
+  
+  } */
+  .ParentCard{
+    width: 100%; 
+   /* display: flex;  */
+   flex-wrap: wrap;
+   
+  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* flex-direction: row; */
+    width: 400px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    margin: 10px;
+   
+
+
+}
+
+img{
+    width: 100%;
+   height: auto;
+   object-fit: cover;
+   /* aspect-ratio: 1/1; */
+
+   
+
+}
+
+.cardss{
+    width: 100%; 
+   display: flex; 
+   flex-wrap: wrap;
+   
+  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+}

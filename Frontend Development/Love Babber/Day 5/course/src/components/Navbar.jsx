@@ -1,9 +1,8 @@
+import "./Navbar.css";
 function Navbar() {
   return (
     <>
-      <nav>
-        <h1>Top Courses</h1>
-      </nav>
+      <h1 className="navv">Top Courses</h1>
     </>
   );
 }
