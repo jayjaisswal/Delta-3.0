@@ -32,7 +32,7 @@ function App() {
   
   return (
     <>
-      <div className="">
+      <div className="-">
         <Navbar></Navbar>
       </div>
       <div>

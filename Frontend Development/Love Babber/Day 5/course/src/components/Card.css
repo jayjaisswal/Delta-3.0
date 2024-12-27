@@ -1,31 +1,18 @@
 
-
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  
-  
-  }
-  body{
-    width: 100vw;
-    height: 100vh;
-  
-  } */
   .ParentCard{
-    width: 100%; 
+    /* width: 100%;  */
    /* display: flex;  */
    flex-wrap: wrap;
+   background-color: black;
    
   
    display: flex;
    align-items: center;
    justify-content: center;
-   /* flex-direction: row; */
+   /* flex-direction: column; */
     width: 400px;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
+    height: 430px;
+  
     /* flex-direction: column; */
     margin: 10px;
    
@@ -45,12 +32,36 @@ img{
 
 .cardss{
     width: 100%; 
-   display: flex; 
+   /* display: flex;  */
    flex-wrap: wrap;
+   background-color: #000000d5;
    
   
    display: flex;
    align-items: center;
    justify-content: center;
    flex-direction: row;
+}
+
+.heart{
+  width: 100%;
+ display: flex;
+ justify-content: end;
+}
+
+.title{
+  color: white;
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+}
+
+.desc{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  text-align: justify;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-bottom: 9px;
 }
