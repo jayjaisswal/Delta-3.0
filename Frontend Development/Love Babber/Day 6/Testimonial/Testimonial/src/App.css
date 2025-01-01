@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    
+}
+.body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 400px;
+    height: 500px; */
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgb(228, 231, 235);
+
+}
+.ruler{
+    width: 330px;
+    border-top: 5px solid violet;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) { /* Adjust the breakpoint as needed */
+    .ruler{
+        width: 660px;
+        border-top: 5px solid violet;
+    }
+  }

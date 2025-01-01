@@ -12,44 +12,7 @@
 
 
 
-.btnhead{
-  display: flex;
-  align-items: center;
-  justify-content: end;
+.nav{
+  
   background: rgb(99, 3, 244);
-  
-  
-
 }
-
-.butnn{
-  margin-right: 100px;
-}
-
-/* .btnhead {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Spread the title and button */
-  /* padding: 10px 20px; Add spacing for a neat layout
-  background: rgb(99, 3, 244); Set background color */
-/* } */
-
-/* .navv {
-  color: white;
-  margin: 0; /* Remove default margin */
-/* } */ 
-
-/* .butnn {
-  margin-right: 20px; /* Adjust margin for alignment */
-  /* padding: 10px 20px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-} */
-
-/* .butnn:hover {
-  background-color: gray; /* Optional hover effect */
-/* }  */

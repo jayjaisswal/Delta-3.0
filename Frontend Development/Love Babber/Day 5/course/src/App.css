@@ -1,19 +1,9 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.appcs{
+height: 100%;
+  /* width: 100vw;  */
+  background-color: #000000d5;
   
   
-  }
-  body{
-    width: 100vw;
-    height: 100vh;
   
-  }
-  .container{
-    margin: 40px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  } */
+}
