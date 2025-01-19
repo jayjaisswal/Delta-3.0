@@ -1,6 +1,8 @@
 // import "../assets/login.png";
 import frameImage from "../assets/frame.png";
-function Template({ title, desc1, desc2, image, formtype, setIsLoggedIn }) {
+import SignupForm from "./SignupForm";
+import LoginForm from "./LoginForm";
+function Template({ title, desc1, desc2, image, formType, setLoggedIn }) {
   return (
     <div className="">
       <div>
@@ -10,7 +12,7 @@ function Template({ title, desc1, desc2, image, formtype, setIsLoggedIn }) {
           <span>{desc2}</span>
         </p>
 
-        {formtype === "signup" ? <SignupForm /> : <LoginForm />}
+        {formType === "signup" ? <SignupForm setLoggedIn={setLoggedIn} /> : <LoginForm setLoggedIn={setLoggedIn}/>}
 
         <div>
           <div></div>
@@ -24,19 +26,21 @@ function Template({ title, desc1, desc2, image, formtype, setIsLoggedIn }) {
       </div>
 
       <div>
-        <img src={frameImage}
-            alt="Pattern"
-            width={558}
-            height={504}
-            loading="lazy"/>
+        <img
+          src={frameImage}
+          alt="Pattern"
+          width={558}
+          height={504}
+          loading="lazy"
+        />
 
-
-        <img src={image}
-            alt="Pattern"
-            width={558}
-            height={490}
-            loading="lazy"/>
-        
+        <img
+          src={image}
+          alt="Pattern"
+          width={558}
+          height={490}
+          loading="lazy"
+        />
       </div>
     </div>
   );

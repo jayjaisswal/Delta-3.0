@@ -23,7 +23,7 @@ function App() {
     gender: "",
     favCar: "",
   });
-  // console.log(formData);
+  console.log(formData);
 
   // function changeHandler(event) {
   //   setFormData((prevFormData) => {
@@ -99,7 +99,7 @@ function App() {
             name="gender"
             value="male"
             id="male"
-            checked={formData.gender === "male"}
+            // checked={formData.gender === "male"}
           />
           <label htmlFor="female">female :</label>
           <input
@@ -108,7 +108,7 @@ function App() {
             name="gender"
             value="female"
             id="female"
-            checked={formData.gender === "female"}
+            // checked={formData.gender === "female"}
           />
           
         </fieldset>

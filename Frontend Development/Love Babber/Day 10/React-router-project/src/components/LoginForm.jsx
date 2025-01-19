@@ -1,25 +1,43 @@
 import { useState } from "react";
-import { AiOutLineEye, AiOutLineEyeInvisible } from "react-icon/ai";
-import { ImPrevious } from "react-icons/im";
+import {  toast } from "react-hot-toast";
 
-function LoginForm() {
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+
+import { Link, useNavigate } from "react-router-dom";
+
+function LoginForm({setLoggedIn}) {
+  
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
 
+  // function changeHandler(event) {
+  //   setFormData((prevData) => ({
+  //     ...prevData,
+  //     [event.target]: event.target.value,
+  //   }));
+  // }
   function changeHandler(event) {
+    const { name, value } = event.target; // Destructure the name and value from the input
     setFormData((prevData) => ({
       ...prevData,
-      [event.target.value]: event.target.value,
+      [name]: value, // Use the name attribute as the key and assign the input's value
     }));
+  }
+  function submitHandler(event) {
+    event.preventDefault();
+    setLoggedIn(true);
+    toast.success("Logged In");
+    navigate("/dashboard");
+    console.log("hello");
   }
   return (
     <div>
-      <form action="">
-        <label htmlFor="">
+      <form onSubmit={submitHandler}>
+        <label>
           <p>
             Email Address<sup>*</sup>
           </p>
@@ -33,7 +51,7 @@ function LoginForm() {
           />
         </label>
 
-        <label htmlFor="">
+        <label>
           <p>
             Password<sup>*</sup>
           </p>
@@ -47,7 +65,7 @@ function LoginForm() {
           />
 
           <span onClick={() => setShowPassword((prev) => !prev)}>
-            {showPassword ? <AiOutLineEyeInvisible /> : <AiOutLineEye />}
+            {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
           </span>
 
           <Link to="#">
@@ -60,3 +78,5 @@ function LoginForm() {
     </div>
   );
 }
+
+export default LoginForm;

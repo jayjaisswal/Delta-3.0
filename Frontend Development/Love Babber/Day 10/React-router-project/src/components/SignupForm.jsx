@@ -1,6 +1,10 @@
 import { useState } from "react";
-import { AiOutLineEye, AiOutLineEyeInvisible } from "react-icon/ai";
-function LoginForm() {
+import { Toaster, toast } from "react-hot-toast";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+// import { ImPrevious } from "react-icons/im";
+
+import { Link, useNavigate } from "react-router-dom";
+function SignupForm({ setLoggedIn }) {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -9,12 +13,22 @@ function LoginForm() {
     confirmPassword: "",
   });
   const [showPassword, setShowPassword] = useState(false);
-
+  const navigate = useNavigate();
   function changeHandler(event) {
     setFormData((prevData) => ({
       ...prevData,
-      [event.target.value]: event.target.value,
+      [event.target.name]: event.target.value,
     }));
+  }
+  function submitHandler(event) {
+    event.preventDefault();
+    if (formData.password != formData.confirmPassword) {
+      toast.error("Password do not match");
+      return;
+    }
+    setLoggedIn(true);
+    toast.success("Account Created");
+    navigate("/dashboard");
   }
   return (
     <div>
@@ -24,7 +38,7 @@ function LoginForm() {
         <button>Instructor</button>
       </div>
 
-      <form action="">
+      <form onSubmit={submitHandler}>
         <div>
           {/* first name and last name  */}
           <label htmlFor="">
@@ -85,7 +99,7 @@ function LoginForm() {
               placeholder="Enter password"
             />
             <span onClick={() => setShowPassword((prev) => !prev)}>
-              {showPassword ? <AiOutLineEyeInvisible /> : <AiOutLineEye />}
+              {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
             </span>
           </label>
 
@@ -102,14 +116,14 @@ function LoginForm() {
               placeholder="Confirm password"
             />
             <span onClick={() => setShowPassword((prev) => !prev)}>
-              {showPassword ? <AiOutLineEyeInvisible /> : <AiOutLineEye />}
+              {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
             </span>
           </label>
         </div>
-        <button>
-            Create Account
-        </button>
+        <button>Create Account</button>
       </form>
     </div>
   );
 }
+
+export default SignupForm;
