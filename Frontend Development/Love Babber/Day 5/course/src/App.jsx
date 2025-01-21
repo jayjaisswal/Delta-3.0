@@ -30,7 +30,7 @@ function App() {
     fetchData();
   }, []);
 
-  return (
+  return ( 
     <div className="appcs">
       <div>
         <Navbar></Navbar>
