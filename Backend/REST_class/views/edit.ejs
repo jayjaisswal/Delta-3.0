@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit post</title>
+</head>
+<body>
+    <!-- Heading indicating the purpose of the page -->
+    <h2>Edit your post</h2>
+    
+    <!-- Display the post ID, using server-side templating to inject the value -->
+    <p>Post id : <%= post.id %></p>
+    
+    <!-- Display the username associated with the post, using server-side templating to inject the value -->
+    <p>Post Username : <%= post.username %></p>
+    
+    <!-- Form for editing the post -->
+    <!-- The form uses POST method and the action includes a PATCH method override for RESTful API -->
+    <form method="post" action="/posts/<%= post.id %>?_method=PATCH">
+        <!-- Textarea for editing the content of the post -->
+        <!-- The name attribute should be set to "content" to ensure the form data is correctly sent -->
+        <textarea rows="10" cols="30" name="content" id=""><%= post.content %></textarea>
+        
+        <!-- Submit button to submit the form -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,7 +1,9 @@
 import "./Card.css";
 import React, { useState } from "react";
+
 function Card({ id, name, info, image, price, removeTour }) {
   const [readMore, setRead] = useState(false);
+ 
   function readMoreFun() {
     setRead(!readMore);
   }

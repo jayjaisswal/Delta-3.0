@@ -265,11 +265,13 @@ ul a{
     align-items: center; */
 
 }
+.pages a{
+    color: white;
+   
+    text-decoration: none; 
+}
 .pages{
-    
     padding-top: 25px;
-
-       
 }
 
 .copyright{
