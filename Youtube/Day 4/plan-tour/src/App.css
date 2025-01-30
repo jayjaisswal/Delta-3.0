@@ -28,6 +28,23 @@ body{
   
 }
 
+.refresh{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button{
+  padding: 10px 80px;
+  border:white;
+  cursor: pointer;
+}
+button:hover{
+  background-color: whitesmoke;
+}
+
 
 
 
