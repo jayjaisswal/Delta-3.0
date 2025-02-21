@@ -1,0 +1,56 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+.container{
+  
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading{
+  font-weight: 600;
+  color: brown;
+  font-size: 25px;
+}
+body{
+  background-color: aqua;
+}
+
+.Increment{
+  margin-top: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.7);
+  padding: 3px 25px;
+  margin: 10px;
+  font-size: 22px;
+  
+}
+.Decrement{
+  margin-top: 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.7);
+  padding: 3px 25px;
+  margin: 10px;
+  font-size: 22px;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  
+ 
+}
+
+.reset{
+  border: 1px solid blue;
+  padding: 3px 25px;
+  margin-top: 10px;
+  background-color: rgb(67, 67, 163);
+}
