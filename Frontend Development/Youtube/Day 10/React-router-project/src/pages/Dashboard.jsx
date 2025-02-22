@@ -1,7 +1,7 @@
 function Dashboard() {
   return (
     <div className="">
-      Welcome to Studynotion!
+      Welcome to SmartStudy!
     </div>
   );
 }

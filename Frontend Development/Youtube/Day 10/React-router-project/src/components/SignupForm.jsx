@@ -13,6 +13,7 @@ function SignupForm({ setLoggedIn }) {
     confirmPassword: "",
   });
   const [showPassword, setShowPassword] = useState(false);
+  const [showPassword1, setShowPassword1] = useState(false);
   const navigate = useNavigate();
   function changeHandler(event) {
     setFormData((prevData) => ({
@@ -98,8 +99,8 @@ function SignupForm({ setLoggedIn }) {
               name="password"
               placeholder="Enter password"
             />
-            <span onClick={() => setShowPassword((prev) => !prev)}>
-              {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
+            <span onClick={() => setShowPassword1((prev) => !prev)}>
+              {showPassword1 ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
             </span>
           </label>
 

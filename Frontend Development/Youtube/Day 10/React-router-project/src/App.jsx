@@ -10,12 +10,18 @@ import { useState } from "react";
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   return (
-    <div>
+    <div className="w-screen h-screen bg-black flex flex-col">
       <Navbar loggedIn={loggedIn} setLoggedIn={setLoggedIn}></Navbar>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/login" element={<Login setLoggedIn={setLoggedIn}/>}></Route>
-        <Route path="/signup" element={<Signup setLoggedIn={setLoggedIn} />}></Route>
+        <Route
+          path="/login"
+          element={<Login setLoggedIn={setLoggedIn} />}
+        ></Route>
+        <Route
+          path="/signup"
+          element={<Signup setLoggedIn={setLoggedIn} />}
+        ></Route>
         <Route path="/dashboard" element={<Dashboard />}></Route>
       </Routes>
     </div>
