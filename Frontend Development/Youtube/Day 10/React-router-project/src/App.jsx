@@ -7,10 +7,13 @@ import Login from "./pages/Login";
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
+
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   return (
-    <div className="w-screen h-screen bg-black flex flex-col">
+    <div className="w-screen h-screen bg-richblack-900 flex flex-col overflow-y-auto ">
+      
+
       <Navbar loggedIn={loggedIn} setLoggedIn={setLoggedIn}></Navbar>
       <Routes>
         <Route path="/" element={<Home />}></Route>

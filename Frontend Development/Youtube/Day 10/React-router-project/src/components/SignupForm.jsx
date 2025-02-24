@@ -32,7 +32,7 @@ function SignupForm({ setLoggedIn }) {
     navigate("/dashboard");
   }
   return (
-    <div>
+    <div >
       {/* student-Instructor tab */}
       <div>
         <button>Student</button>

@@ -5,13 +5,13 @@ import logo from "../assets/Logo.svg";
 
 function Navbar({ loggedIn, setLoggedIn }) {
   return (
-    <div className="flex text-white  items-center h-20 justify-evenly">
+    <div className="flex text-richblack-100  items-center w-11/12 max-w-[1160px] py-4 mx-auto  justify-between">
       <Link to="/">
         <img src={logo} alt="Logo" width={160} height={32} loading="lazy"></img>
       </Link>
 
       <nav>
-        <ul className="flex gap-3">
+        <ul className="flex gap-x-6">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -24,20 +24,24 @@ function Navbar({ loggedIn, setLoggedIn }) {
         </ul>
       </nav>
 
-      <div className="flex gap-3">
+
+    {/* login signup buttons */}
+      <div className="flex gap-4 items-center ">
         {!loggedIn && (
           <Link to="/login">
-            <button>Login</button>
-          </Link>
+            <button className="cursor-pointer bg-richblack-800 py-[8px] px-[12px] rounded-[8px] border border-richblack-700">Login</button>
+          </Link> 
+          //    border-richblack-700
         )}
         {!loggedIn && (
           <Link to="/signup">
-            <button>signup</button>
+            <button className="cursor-pointer bg-richblack-800 py-[8px] px-[12px] rounded-[8px] border border-richblack-700">signup</button>
           </Link>
         )}
         {loggedIn && (
           <Link to="/">
             <button
+              className="cursor-pointer bg-richblack-800 py-[8px] px-[12px] rounded-[8px] border border-richblack-700"
               onClick={() => {
                 setLoggedIn(false);
                 toast.success("Logged out");
@@ -49,7 +53,7 @@ function Navbar({ loggedIn, setLoggedIn }) {
         )}
         {loggedIn && (
           <Link to="/dashboard">
-            <button>Dashboard</button>
+            <button  className="cursor-pointer bg-richblack-800 py-[8px] px-[12px] rounded-[8px] border border-richblack-700">Dashboard</button>
           </Link>
         )}
       </div>
