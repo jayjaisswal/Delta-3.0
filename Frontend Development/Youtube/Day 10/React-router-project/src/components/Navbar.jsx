@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import { Toaster, toast } from "react-hot-toast";
 
 import logo from "../assets/Logo.svg";
+import LOGOO from "../assets/LOGOO.png";
 
 function Navbar({ loggedIn, setLoggedIn }) {
   return (
     <div className="flex text-richblack-100  items-center w-11/12 max-w-[1160px] py-4 mx-auto  justify-between">
       <Link to="/">
-        <img src={logo} alt="Logo" width={160} height={32} loading="lazy"></img>
+        <img className="mt-5" src={LOGOO} alt="Logo" width={160} height={32} loading="lazy"></img>
       </Link>
 
       <nav>
