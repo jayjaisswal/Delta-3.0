@@ -31,7 +31,7 @@ function LoginForm({ setLoggedIn }) {
     setLoggedIn(true);
     toast.success("Logged In");
     navigate("/dashboard");
-    console.log("hello");
+    console.log(formData);
   }
   return (
     <div className="flex flex-col gap-y-4 mt-6">
@@ -52,7 +52,7 @@ function LoginForm({ setLoggedIn }) {
         </label>
 
         <label className="w-full relative">
-          <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]">
+          <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] mt-4">
             Password<sup className="text-pink-200">*</sup>
           </p>
           <input
@@ -65,7 +65,7 @@ function LoginForm({ setLoggedIn }) {
             placeholder="Enter password"
           />
 
-          <span className="absolute right-3 top-[75px] cursor-pointer" onClick={() => setShowPassword((prev) => !prev)}>
+          <span className="absolute right-3 top-[90px] cursor-pointer" onClick={() => setShowPassword((prev) => !prev)}>
             {showPassword ? <AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF" /> : <AiOutlineEye fontSize={24} fill="#AFB2BF" />}
           </span>
 
