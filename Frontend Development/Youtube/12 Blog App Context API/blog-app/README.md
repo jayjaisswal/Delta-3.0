@@ -22,7 +22,7 @@ export default defineConfig({
 
 ### Step 3: Add this to Your App.CSS 
 ```sh
-        @import "tailwindcss"; 
+@import "tailwindcss"; 
 ```
 ### Step 4: Color Mark And Suggestion                                                                            
 In Tailwind Latest Version **tailwind.config.js** file is no longer but for
@@ -39,3 +39,53 @@ export default {
   
 
 ```
+### Add Custom Color in App.css
+```sh
+@layer base {
+  .text-clr {
+    color: #1E40AF; /* Custom Blue */
+  }
+
+  .bg-jay {
+    background-color: #1E40AF; /* Custom Blue */
+  }
+
+  .text-prince {
+    color: #F59E0B; /* Custom Yellow */
+  }
+
+  .bg-rj {
+    background-color: #F59E0B; /* Custom Yellow */
+  }
+}
+```
+
+### Alternate Way to use Custom Color
+```sh
+:root {
+    --color-primary: #1E40AF; /* Custom Blue */
+    --color-secondary: #F59E0B; /* Custom Yellow */
+  }
+  
+  .text-primary {
+    color: var(--color-primary);
+  }
+  
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+  
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+  
+
+```
+
+
+
+
