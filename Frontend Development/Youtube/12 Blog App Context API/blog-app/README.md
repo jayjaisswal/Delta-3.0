@@ -5,10 +5,13 @@ Step 1:
 
 ```sh
 npm install tailwindcss @tailwindcss/vite
-
+```
 Step 2: vite.config.ts 
-    Add: import { defineConfig } from 'vite' 
+```sh
+     import { defineConfig } from 'vite' 
+   
        import tailwindcss from '@tailwindcssvite' 
+       ```
          export default defineConfig({
             plugins: [
                tailwindcss(), 
