@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Toaster, toast } from "react-hot-toast";
 
-import logo from "../assets/Logo.svg";
+
 import LOGOO from "../assets/LOGOO.png";
 
 function Navbar({ loggedIn, setLoggedIn }) {
