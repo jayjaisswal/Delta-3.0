@@ -6,24 +6,25 @@
 ```sh
 npm install tailwindcss @tailwindcss/vite
 ```
-### Step 2: vite.config.ts Add
-
-     import { defineConfig } from 'vite' 
-```sh   
-       import tailwindcss from '@tailwindcssvite' 
-```
-         export default defineConfig({
-            plugins: [
+### Step 2:Update vite.config.ts File
 ```sh
-               tailwindcss(),
-``` 
-                    ],
-            })
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-Step 3: Add this to Your App.CSS 
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(),tailwindcss(),],
+})
+```
+
+
+
+### Step 3: Add this to Your App.CSS 
 ```sh
         @import "tailwindcss"; 
 ```
+### Step 4: Color Mark And Suggestion                                                                            
 In Tailwind Latest Version **tailwind.config.js** file is no longer but for
 **Color suggestion** Add this by creating this File Manually
 ```sh
