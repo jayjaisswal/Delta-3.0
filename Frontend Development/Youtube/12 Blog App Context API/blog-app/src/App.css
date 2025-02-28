@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/** @layer base {
+    .text-primary {
+      color: #1E40AF; 
+    }
+  
+    .bg-clr {
+      background-color: #1E40AF; 
+    }
+  
+    .text-secondary {
+      color: #F59E0B; 
+    }
+  
+    .bg-secondary {
+      background-color: #F59E0B; 
+    }
+  } **/
+
+  :root {
+    --color-primary: #1E40AF; /* Custom Blue */
+    --color-secondary: #F59E0B; /* Custom Yellow */
+  }
+  
+  .text-primary {
+    color: var(--color-primary);
+  }
+  
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+  
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+  

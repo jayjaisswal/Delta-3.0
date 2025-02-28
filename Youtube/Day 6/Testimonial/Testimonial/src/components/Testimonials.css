@@ -1,0 +1,49 @@
+.Testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+   
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    
+    
+    
+}
+@media (min-width: 768px) { /* Adjust the breakpoint as needed */
+    .Testimonials {
+      width: 700px;
+    }
+  }
+.btn{
+    background-color: #fff;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    border: #fff;
+    cursor: pointer;
+    
+}
+#rightbtn{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.btn:hover{
+    color: #c312c395;
+}
+.bigbutton{
+    margin-top: 40px;
+    /* margin-bottom: 10px; */
+    padding: 7px 20px;
+    border-radius: 5px;
+    background-color: #c312c395;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    cursor: pointer;
+    border: white;
+}
+.bigbutton:hover{
+    background-color: #c312c3b8;
+}

@@ -1,0 +1,54 @@
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+
+    
+}
+.imageParent{
+    height: 140px;
+    width: 148px;
+    border-radius: 50%;
+    background-color: #0d50bd;
+    /* margin-right: 500px; */
+   /* position: absolute; /* Position the image relative to .card */
+   /* top: -120px; /* Moves the image upwards */
+   /* z-index: 1; /*Ensures it doesn't overlap other content unexpectedly */
+        
+}
+.imageChild{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    z-index: 2;
+    margin-top: 6px;   
+
+}
+
+
+.name{
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: cursive;
+}
+.job{
+    
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.6);
+
+}
+.desc{
+    font-family: cursive;
+    text-align: center;
+    color: slategray;
+    margin-top: 10px;
+}
+
+.icon{
+    
+    color:#c312c395 ;
+}
